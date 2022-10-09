@@ -1,12 +1,13 @@
-import { StrictMode } from "react";
-import { render } from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from "./App";
+import Map from "./Map";
+
+import "./styles.css";
+
+function App() {
+	return <Map />;
+}
 
 const rootElement = document.getElementById("root");
-render(
-	<StrictMode>
-		<App />
-	</StrictMode>,
-	rootElement
-);
+ReactDOM.render(<App />, rootElement);
